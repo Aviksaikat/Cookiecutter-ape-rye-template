@@ -1,23 +1,23 @@
-# Cookiecutter-ape-hatch-template
-Simple Cookiecutter template for [`Ape`](https://github.com/ApeWorX/ape) (ApeWorx) with `Hatch`, `ruff`, `mypy`.
+# Cookiecutter-ape-rye-template
+Simple Cookiecutter template for [`Ape`](https://github.com/ApeWorX/ape) (ApeWorx) with `rye`, `ruff`, `mypy`.
 
 
 
 |         |                                    |
 |---------|------------------------------------|
 | Details | [![License - MIT][MIT-image]][MIT-link] [![GitHub Sponsors][sponsor-image]][sponsor-link] |
-| Features | [![Hatch project][hatch-image]][hatch-link] [![linting - Ruff][ruff-image]][ruff-link] [![types - mypy][mypy-image]][mypy-link] [![test - pytest][pytest-image]][pytest-link] [![linting - precommit][precommit-image]][precommit-link] [![docs - mkdocs][mkdocs-image]][mkdocs-link]
+| Features | [![rye project][rye-image]][rye-link] [![linting - Ruff][ruff-image]][ruff-link] [![types - mypy][mypy-image]][mypy-link] [![test - pytest][pytest-image]][pytest-link] [![linting - precommit][precommit-image]][precommit-link] [![docs - mkdocs][mkdocs-image]][mkdocs-link]
 
 
 
 ## ✨ Features
 
 * [X] Lightweight [`Ape`](https://github.com/ApeWorX/ape) starter
-* [X] [`Hatch`](https://hatch.pypa.io/latest/install/) package management
+* [X] [`rye`](https://rye.pypa.io/latest/install/) package management
 * [X] Linting and formatting with [`ruff`](https://github.com/charliermarsh/ruff) which replaces [isort], [flake8], [black], etc.
 * [X] Type checking with [`mypy`](https://github.com/python/mypy)
 * [X] Unit tests with [`pytest`](https://github.com/pytest-dev/pytest) with optional asyncio setup.
-* [X] Automate and standardize testing with [Hatch-env-matrices]
+* [X] Automate and standardize testing with [rye-env-matrices]
 * [X] Documentation with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and docstring reference support with [mkdocstrings](https://mkdocstrings.github.io/).
 * [X] [pyproject.toml]: all package, build and tool configuration in one file,
 * [X] [pre-commit]: pre-commit git hooks that make your life easier,
@@ -31,13 +31,13 @@ Simple Cookiecutter template for [`Ape`](https://github.com/ApeWorX/ape) (ApeWor
 
 Generate the project:
 
-This project will use [`pipx`](https://github.com/pypa/pipx) to install `hatch` in an isolated enviroment. Make sure you have `pipx` installed before running the following command.
+This project will use [`pipx`](https://github.com/pypa/pipx) to install `rye` in an isolated enviroment. Make sure you have `pipx` installed before running the following command.
 
 ```bash
-cookiecutter https://github.com/Aviksaikat/Cookiecutter-ape-hatch-template
+cookiecutter https://github.com/Aviksaikat/Cookiecutter-ape-rye-template
 ```
 
-The generator will automatically call `hatch env create` at the end.
+The generator will automatically call `rye env create` at the end.
 
 
 ### With cruft
@@ -45,17 +45,17 @@ The generator will automatically call `hatch env create` at the end.
 [cruft](https://github.com/cruft/cruft) is a layer above Cookiecutter allowing you to update your project from the template after it has been generated.
 
 ```bash
-cruft create https://github.com/Aviksaikat/Cookiecutter-ape-hatch-template
+cruft create https://github.com/Aviksaikat/Cookiecutter-ape-rye-template
 ```
 
 ## License
 
-This project is licensed under the terms of the [MIT](https://github.com/Aviksaikat/Cookiecutter-ape-hatch-template/blob/main/LICENSE) license.
+This project is licensed under the terms of the [MIT](https://github.com/Aviksaikat/Cookiecutter-ape-rye-template/blob/main/LICENSE) license.
 
 
 
 [cookiecutter]: https://cookiecutter.readthedocs.io/
-[Hatch-env-matrices]: https://hatch.pypa.io/dev/config/environment/advanced/#matrix
+[rye-env-matrices]: https://rye.pypa.io/dev/config/environment/advanced/#matrix
 [cookiecutter-pypackage]: https://github.com/audreyfeldroy/cookiecutter-pypackage
 [pre-commit]: https://pre-commit.com/
 [mkdocs]: https://www.mkdocs.org/
@@ -66,13 +66,13 @@ This project is licensed under the terms of the [MIT](https://github.com/Aviksai
 [mypy]: https://mypy-lang.org/
 [black]: https://black.readthedocs.io/
 [ruff]: https://beta.ruff.rs/
-[pyproject.toml]: https://hatch.pypa.io/latest/config/metadata/
-[`README.md`]: https://github.com/aviksaikat/the-hatchlor-demo
+[pyproject.toml]: https://rye.pypa.io/latest/config/metadata/
+[`README.md`]: https://github.com/aviksaikat/the-ryelor-demo
 
-[Tests-image]: https://github.com/aviksaikat/the-hatchlor/actions/workflows/run-tests.yml/badge.svg?branch=main
-[Tests-link]: https://github.com/aviksaikat/the-hatchlor/actions/workflows/run-tests.yml
-[hatch-image]: https://img.shields.io/badge/%F0%9F%A5%9A-hatch-4051b5.svg
-[hatch-link]: https://github.com/pypa/hatch
+[Tests-image]: https://github.com/aviksaikat/the-ryelor/actions/workflows/run-tests.yml/badge.svg?branch=main
+[Tests-link]: https://github.com/aviksaikat/the-ryelor/actions/workflows/run-tests.yml
+[rye-image]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/rye/main/artwork/badge.json
+[rye-link]: https://github.com/astral-sh/rye
 [ruff-image]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
 [ruff-link]: https://github.com/charliermarsh/ruff
 [mypy-image]: https://img.shields.io/badge/Types-mypy-blue.svg
